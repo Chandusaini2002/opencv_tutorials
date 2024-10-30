@@ -4,7 +4,7 @@ if img is None:
     print("img is not found")
 else :
     grayscale = cv2.cvtColor(img ,cv2.COLOR_BGR2GRAY)
-    blurr_img = cv2.GaussianBlur(gray,(5,5),0)
+    blurr_img = cv2.GaussianBlur(grayscale,(5,5),0)
     cv2.imshow("original img",img)
     cv2.imshow("gray img",grayscale)
     cv2.imshow("blurring and smoothing img",blurr_img)
